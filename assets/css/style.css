@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-page {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+/* REMEMBER TO FLEX IT TO PUT IT ON THE SAME LINE!! */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
