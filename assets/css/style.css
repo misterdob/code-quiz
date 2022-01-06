@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+/* REMEMBER TO FLEX IT TO PUT IT ON THE SAME LINE!! */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .intro-page {
   text-align: center;
   font-weight: bold;
@@ -12,10 +20,13 @@
 
 .btn {
   border-radius: 20px;
+  background-color: purple;
+  color: white;
+  margin: auto;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-/* REMEMBER TO FLEX IT TO PUT IT ON THE SAME LINE!! */
-.navbar {
-  display: flex;
-  justify-content: space-between;
+.hidden {
+  display: none;
 }

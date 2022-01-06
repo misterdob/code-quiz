@@ -11,11 +11,12 @@ put highscore, timer in a nav, question container, etc-->
     <title>Code Quiz App</title>
   </head>
   <body>
-    <div class="navbar">
-      <a href="#">View Highscore</a>
-      <h3>Time:</h3>
-    </div>
-    <div class="intro-page" class="hidden">
+    <nav class="navbar">
+      <!-- <a href="#">View Highscore</a> -->
+      <button class="view-highscores btn">View Highscores</button>
+      <h3 class="timer">Time:</h3>
+    </nav>
+    <div class="intro-page hidden">
       <h1>Coding Quiz Challenge</h1>
       <br />
       <p>
@@ -26,6 +27,36 @@ put highscore, timer in a nav, question container, etc-->
       <br />
       <button id="startButton" class="btn">Start Quiz</button>
     </div>
-    <script src="script.js"></script>
+    <div class="questions-container hidden">
+      <h1 class="question-title">What's up Doc??</h1>
+      <div class="answer-buttons">
+        <button class="btn-1 btn">One</button>
+        <button class="btn-2 btn">Two</button>
+        <button class="btn-3 btn">Three</button>
+        <button class="btn-4 btn">Four</button>
+      </div>
+      <div>
+        <p class="checkbox hidden">Right or wrong?</p>
+      </div>
+    </div>
+    <div class="initial-form hidden">
+      <form>
+        <label>Placeholder</label>
+        <input
+          type="text"
+          name="Initials"
+          placeholder="Put text here or whatever"
+        />
+        <button class="btn-submit btn">Submit</button>
+      </form>
+    </div>
+    <div class="highscores-page hidden">
+      <h1>Highscore Page</h1>
+      <p>Your highscore is... ZERO!!!!</p>
+      <button class="btn-reset btn">Reset</button>
+      <button class="btn-goback btn">Go back</button>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
